@@ -8,6 +8,6 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.contextMenus.onClicked.addListener((info) => {
   if (info.menuItemId !== "askClaude") return;
-  const text = `I selected "${info.selectionText}" on this page: ${info.pageUrl}\n\nI would normally Google this. Tell me what I need to know.`;
+  const text = `I selected "${info.selectionText}" on a my browser\n\nI would normally Google this. Tell me what I need to know.`;
   chrome.tabs.create({ url: `https://claude.ai/new?q=${encodeURIComponent(text)}` });
 });
