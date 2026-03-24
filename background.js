@@ -1,13 +1,13 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: "askClaude",
-    title: "ELI5: \"%s\"",
+    title: "Ask Claude: \"%s\"",
     contexts: ["selection"],
   });
 });
 
 chrome.contextMenus.onClicked.addListener((info) => {
   if (info.menuItemId !== "askClaude") return;
-  const query = encodeURIComponent("Explain this like I'm 5:\n\n" + info.selectionText);
+  const query = encodeURIComponent(info.selectionText);
   chrome.tabs.create({ url: `https://claude.ai/new?q=${query}` });
 });
