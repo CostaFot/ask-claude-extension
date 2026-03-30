@@ -18,8 +18,6 @@ The prompt sent to Claude is:
 
 ## Installation
 
-This extension is not on the Chrome Web Store. Install it manually:
-
 1. Download the latest `ask-claude-*.zip` from the [Releases](../../releases) page and unzip it
 2. Open Chrome and go to `chrome://extensions`
 3. Enable **Developer mode** (toggle in the top right)
