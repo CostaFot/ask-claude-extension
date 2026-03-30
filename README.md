@@ -10,12 +10,6 @@ A Chrome extension that lets you right-click any selected text and ask Claude ab
 2. Right-click and choose **Ask Claude: "..."**
 3. A new tab opens on claude.ai with your question pre-filled and auto-submitted
 
-The prompt sent to Claude is:
-
-> I selected "..." on my browser
->
-> I would normally Google this. Tell me what I need to know.
-
 ## Installation
 
 1. Download the latest `ask-claude-*.zip` from the [Releases](../../releases) page and unzip it
