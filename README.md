@@ -4,6 +4,8 @@
 
 A Chrome extension that lets you right-click any selected text and ask Claude about it — without typing a thing.
 
+<img src="demo.png" width="600" />
+
 ## How it works
 
 1. Select any text on a webpage
